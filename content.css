@@ -1,0 +1,58 @@
+
+section.content{
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin-right: auto; margin-left: auto; margin-top: 20px;
+    padding-bottom: 50px; /* 與footer距離 */
+}
+section.content>.box{
+    background-color: #DCEFF6;
+    flex: none;
+    width: 270px;height: 240px;
+    margin: 10px;
+    margin-bottom: 15px;
+}  
+section.content>.box>.img{
+    width: 100%;height: 80%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+section.content>.box>.word{
+    text-align: center;
+    vertical-align: center;
+    padding-top: 5px;
+}
+footer{
+    background-color: #000000; color: #ffffff;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; height: 50px;
+    padding-top: 10px;
+}
+@media (max-width: 1200px){
+    section.content{
+        width: 90%; display: flex; flex-wrap: wrap;
+        }
+    }
+    
+@media (max-width: 1200px){
+    section.content>.box{
+        width: 45%;
+    }  
+    section.content>.box>.img{
+        height: 100%;
+    }
+}
+@media (max-width: 600px){
+    section.content>.box{
+        width: 90%;
+    }  
+    section.content>.box>.img{
+        height: 100%;
+    }   
+}
